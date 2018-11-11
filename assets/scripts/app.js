@@ -8,7 +8,12 @@
 
 const playSound = function () {
   const jean = new Audio('../../../audio/jean.mp3')
-
+  if (jean.paused) {
+    jean.currentTime = 0
+    jean.play()
+  } else {
+    jean.pause()
+  }
 }
 
 $(() => {
