@@ -26,9 +26,9 @@ Your browser does not support the audio element.
     <button type="button" id="stop" name="button">Stop</button>
   </div>
   <legend>Volume</legend>
-  <input id="synth-volume" type="range" name="synth volume" value="0.5" min="0" step=".1" max="1">
+  <input id="synth-volume" class="range" type="range" name="synth volume" value="0.12" min="0" step=".01" max="1">
   <legend>Frequency</legend>
-  <input id="synth-frequency" type="range" name="synth volume" value="1000" min="20" step="1" max="20000">
+  <input id="synth-frequency" class="range" type="range" name="synth volume" value="1000" min="20" step="1" max="20000">
 <div>
   <select id="shape-selector">
   <option value="sine">Sine</option>
@@ -37,6 +37,8 @@ Your browser does not support the audio element.
   <option value="triangle">Triangle</option>
 </select>
 </div>
+<button id="toggle-oscillator" type="button" name="button">Show/Hide oscilloscope</button>
+<canvas id="oscilloscope"></canvas>
 </section>
       <h3>Links</h3>
       <ul>
