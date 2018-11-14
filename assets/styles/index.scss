@@ -1,1 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
+
+.controls, .playbutton {
+  display: block;
+  margin: 10px;
+}

@@ -12,7 +12,37 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Audio Practice</h1>
-      <button id="test" class="btn btn-primary" >Play Jean</button>
+      <h1>Browser Audio</h1>
+
+      <button id="test" class="btn btn-primary playbutton" >Play Jean</button>
+      <audio controls class="controls">
+  <source src="./audio/jean.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<section class="synth">
+  <h2>THE SYNTH:</h2>
+  <div>
+    <button type="button" id="start" name="button">Start</button>
+    <button type="button" id="stop" name="button">Stop</button>
+  </div>
+  <legend>Volume</legend>
+  <input id="synth-volume" type="range" name="synth volume" value="0.5" min="0" step=".1" max="1">
+  <legend>Frequency</legend>
+  <input id="synth-frequency" type="range" name="synth volume" value="1000" min="20" step="1" max="20000">
+<div>
+  <select id="shape-selector">
+  <option value="sine">Sine</option>
+  <option value="square">Square</option>
+  <option value="sawtooth">Sawtooth</option>
+  <option value="triangle">Triangle</option>
+</select>
+</div>
+</section>
+      <h3>Links</h3>
+      <ul>
+      <li><a href="http://mdn.github.io/violent-theremin/">Theramin Visualizer</a></li>
+      <li><a href="http://www.cappel-nord.de/webaudio/conways-melodies/">Conways Game of Life</a></li>
+      <li><a href="http://beepjs.com/">Beep.js</a></li>
+    </ul>
     </body>
 </html>
