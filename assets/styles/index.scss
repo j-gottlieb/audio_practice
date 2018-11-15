@@ -6,6 +6,12 @@
   margin: 10px;
 }
 
+.synth {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
 .range {
   width: 80%;
 }
@@ -14,4 +20,8 @@
   display: none;
   width: 80%;
   height: 100px;
+}
+
+.image {
+  width: 300px;
 }
