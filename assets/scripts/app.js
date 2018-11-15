@@ -51,9 +51,11 @@ $(() => {
   $('#synth-frequency').on('input', function () {
     oscillator.frequency.value = this.value
   })
+  // change the waveform shape of the oscillator
   $('#shape-selector').on('change', function () {
     oscillator.type = this.value
   })
+  // show/hide the oscilloscope
   $('#toggle-oscillator').on('click', function () {
     $('#oscilloscope').toggle()
   })
